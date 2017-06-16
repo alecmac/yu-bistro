@@ -5,8 +5,10 @@ body{
 
 #content{
   float: left;
+  width: 60%;
 }
 
 #nav{
   float: right;
+  width: 30%
 }
