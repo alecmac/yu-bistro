@@ -3,6 +3,11 @@ body{
   background: url("images/swirl_pattern.png");
 }
 
+#main{
+  width: 70%;
+  margin: 0 auto;
+}
+
 #content{
   float: left;
   width: 60%;
