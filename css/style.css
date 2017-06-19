@@ -1,0 +1,122 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  height: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ddd;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body.index {
+  background-image: url("../images/storefront.jpg");
+}
+body.about {
+  background-image: url("../images/hon.jpg");
+
+}
+body.menu {
+  background-image: url("../images/dim.jpg");
+}
+
+h1 {
+  padding-left: 0.67em;
+  font-family: 'Cormorant', serif;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+a:hover {
+  color: #fff;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+ul {
+  padding: 0;
+  margin: 5px;
+}
+
+li {
+  list-style-type: none;
+  color: #cba;
+}
+
+li#nav {
+  padding: 5px;
+  font-size: 1.6vw;
+
+}
+
+li#info {
+  color="red";
+}
+
+
+#subtitle {
+  opacity: 0.6;
+  font-size: 0.6em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#selected {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Cormorant', sans-serif;
+  font-size: 1.3em;
+}
+
+#main {
+  width: 80%;
+  max-width: 950px;
+  height: 90%;
+  margin: 0 auto;
+  background-color: rgba(20,18,15,0.7);
+  position: relative;
+}
+
+#content {
+  float: left;
+  width: 85%;
+  height: 100%;
+}
+
+#side {
+  float: right;
+  width: 15%;
+  height: 100%;
+  background-color: rgba(200,190,170,0.1);
+  text-align: left;
+}
+
+#nav {
+  height: 40%;
+}
+
+#info {
+  height: 30%;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0px;
+  font-size: 1.2vw;
+}
+
+#hours {
+  margin: 0.8em 0;
+}

@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <head>
   <title>Yu Bistro</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant:400,700|Josefin+Sans:400,700" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 </head>
 <body class="index">
-  <h1>Yu Bistro</h1>
+  <h1><a href="index.html">Yu Bistro</a> <span id="subtitle">Dim Sum Bar</span></h1>
   <div id="main">
     <div id="content">
       <h3>Welcome</h3>
       <h3>歡迎光臨</h3>
     </div>
 
-    <div id="nav">
-      <ul>
-        <li><a href="index.html">Welcome</a></li>
-        <li><a href="about.html">Our Story</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="menu.html?id=order">Order</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div id="side">
+      <div id="nav">
+        <ul>
+          <li id="selected"><a href="index.html">Welcome</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="menu.html?id=order">Order</a></li>
+          <li><a href="https://www.opentable.com">Reserve</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div id="info">
+        <ul>
+          <a href="https://goo.gl/maps/nZwBEKwbQhL2">
+            <li>2901 3rd Ave #300</li>
+            <li>Seattle, WA 98121</li>
+          </a>
+          <li>206-555-5555</li>
+          <li><ul id="hours">
+            <li>Sun: 11am-9pm</li>
+            <li>Mon-Thurs: 11am-9pm</li>
+            <li>Fri-Sat: 11am-2am</li>
+          </ul>
+        </ul>
+      </div>
     </div>
   </div>
+  <script src="app.js" charset="utf-8"></script>
 </body>
