@@ -13,46 +13,67 @@
     <h1><a href="index.html">Yu Bistro</a> <span id="subtitle">Menu</span></h1>
     <div id="main">
       <div id="content">
-        <table>
-          <tr>
-            <td class="item">Small<br>$2.50</td>
-            <td class="item"><img class="thumbnail" src="images/menu/bakedhumbao.jpg"></td>
-            <td class="item"><img class="thumbnail" src="images/menu/steamedhumbao.jpg"></td>
-            <td class="item"><img class="thumbnail" src="images/menu/football.jpg"></td>
-          </tr>
-          <tr>
-            <td class="item"><img class="thumbnail" src="images/menu/sesameball.jpg"></td>
-            <td class="item">Medium<br>$2.75</td>
-            <td class="item"><img class="thumbnail" src="images/menu/shumy.jpg"></td>
-            <td class="item"><img class="thumbnail" src="images/menu/bbqporkpuff.jpg"></td>
-          </tr>
-          <tr>
-            <td class="item"><img class="thumbnail" src="images/menu/chickenfeet.jpg"></td>
-            <td class="item"><img class="thumbnail" src="images/menu/turnippie.jpg"></td>
-            <td class="item">Large<br>$3.25</td>
-            <td class="item"><img class="thumbnail" src="images/menu/shrimpball.jpg"></td>
-          </tr>
+        <div id="menu">
+          <div class="item price">Small<br>$2.50</div><div class="item"><img class="thumbnail" src="images/menu/bakedhumbao.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/steamedhumbao.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/football.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/sesameball.jpg"></div><div class="item price">Medium<br>$2.75</div><div class="item"><img class="thumbnail" src="images/menu/shumy.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/bbqporkpuff.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/chickenfeet.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/turnippie.jpg"></div><div class="item price">Large<br>$3.25</div><div class="item"><img class="thumbnail" src="images/menu/shrimpball.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/beeftripe.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/stuffedeggplant.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/spareribs.jpg"></div><div class="item"><img class="thumbnail" src="images/menu/stickyrice.jpg"></div>
+        </div>
 
-            <td class="item"><img class="thumbnail" src="images/menu/beeftripe.jpg"></td>
-            <td class="item"><img class="thumbnail" src="images/menu/stuffedeggplant.jpg"></td>
-            <td class="item"><img class="thumbnail" src="images/menu/spareribs.jpg"></td>
-            <td class="item"><img class="thumbnail" src="images/menu/stickyrice.jpg"></td>
-        </table>
+        <div id="detail">
+          <div id="pic">
+
+          </div>
+          <div id="description">
+            <div class="split-content">
+              <div class="left">
+                Shu My
+              </div>
+              <div class="right">
+                燒賣
+              </div>
+            </div>
+            <div class="split-content">
+              <div class="left">
+
+              </div>
+            </div>
+            <a href="#" id="close">Close</a>
+          </div>
+        </div>
+
       </div>
 
       <div id="side">
-        <ul>
-          <li><a href="index.html">Welcome</a></li>
-          <li><a href="about.html">Our Story</a></li>
-          <li id="selected"><a href="menu.html">Menu</a></li>
-          <li><a href="menu.html?id=order">Order</a></li>
-          <li><a href="https://www.opentable.com">Reserve</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div id="nav">
+          <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="selected"><a href="menu.html">Menu</a></li>
+            <li><a href="menu.html?id=order">Order</a></li>
+            <li><a href="https://www.opentable.com">Reserve</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div id="info">
+          <ul>
+            <a href="https://goo.gl/maps/nZwBEKwbQhL2">
+              <li>2901 3rd Ave #300</li>
+              <li>Seattle, WA 98121</li>
+            </a>
+            <li>206-555-5555</li>
+            <li><ul id="hours">
+              <li>Sun: 11am-9pm</li>
+              <li>Mon-Thurs: 11am-9pm</li>
+              <li>Fri-Sat: 11am-2am</li>
+            </ul>
+          </ul>
+        </div>
       </div>
-
       <div id="cart">
-
+          <table id="totals">
+            <tr><td>Subtotal: <span id="subtotal">0.00</span> </td></tr>
+            <tr><td>Tax (10.1%): <span id="tax">0.00</span> </td></tr>
+            <tr><td>Total: <span id="total">0.00</span></td></tr>
+            <tr><td><button class="btn" type="button">Place Order</button></td></tr>
+          </table>
       </div>
     </div>
     <script src="app.js" charset="utf-8"></script>
