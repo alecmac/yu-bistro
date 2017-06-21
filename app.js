@@ -16,16 +16,39 @@ document.querySelector(".thumbnail").addEventListener("click", function(){
   toggleDetail();
 });
 
-function readMenu(txt){
-
-}
+var menuItems = {};
 var fileRequest = new XMLHttpRequest();
 fileRequest.open("GET",'menu.csv', true);
 fileRequest.onload = function(e) {
   var fileText = fileRequest.responseText;
   document.querySelector("#menu").innerHTML = fileText;
+  var currentItemElement = "";
+  var inQuote = false;
+  var currentItem = {};
+  var propertyArr = ["filePath","name","price","desc","chinese"];
+  for (var i = 0; i < fileText.length; i++) {
+    var ch = fileText[i];
+    if (ch === '"') {
+      inQuote = !inQuote;
+    } else if (ch ===',' && !inQuote) {
+      currentItem[propertyArr[currentItem.length]] = currentItemElement;
+      currentItemElement = "";
+      if (currentItem.length === 5) {
+        menuItems[currentItem[filePath]] = currentItem;
+        currentItem = {};
+      }
+    } else {
+      currentItemElement += ch;
+    }
+  }
 }
 fileRequest.send();
+
+var allText = "";
+for (var item in menuItems) {
+  allText += item["filePath"];
+}
+document.querySelector("#menu").innerHTML = allText;
 
 function toggleDetail(){
   var menuViewBool = window.getComputedStyle(document.querySelector("#menu")).display !== "none";
