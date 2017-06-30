@@ -1,0 +1,16 @@
+#content {
+  padding: 10px;
+}
+
+#side {
+  position: absolute;
+}
+.chinese{
+  font-size: 2em;
+}
+.right {
+  text-align: left;
+}
+.bio {
+  padding-bottom: 10px;
+}

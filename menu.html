@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yu Bistro: Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant:400,700|Josefin+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/menu.css" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  </head>
+  <body class="menu">
+    <h1><a href="index.html">Yu Bistro</a> <span id="subtitle">Menu</span></h1>
+    <div id="main">
+      <div id="content">
+        <div id="menu">
+        </div>
+
+        <div id="detail">
+          <div id="pic" class="close">
+
+          </div>
+          <div id="description">
+            <div class="split-content" id="top">
+
+            </div>
+
+            <form class="split-content" id="bot">
+
+              <div id="quantity">
+                <label for="qty">Quantity: </label><input type="number" name="qty" value="1" min="1"><span id="price"></span>
+              </div>
+              <button type="button" class="btn close">Return to Menu</button>
+              <button type="button" id="add" class="btn">Add to Order</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="side">
+        <div id="nav">
+          <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="selected"><a href="menu.html">Menu</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="https://www.opentable.com">Reserve</a></li>
+          </ul>
+        </div>
+        <div id="info">
+          <ul>
+            <a href="https://goo.gl/maps/nZwBEKwbQhL2">
+              <li>2901 3rd Ave #300</li>
+              <li>Seattle, WA 98121</li>
+            </a>
+            <li>206-555-5555</li>
+            <li><ul id="hours">
+              <li>Sun: 11am-9pm</li>
+              <li>Mon-Thurs: 11am-9pm</li>
+              <li>Fri-Sat: 11am-2am</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div id="cart">
+          <div id="cartItems">
+          </div>
+          <table id="totals">
+            <tr><td>Subtotal: <span id="subtotal">0.00</span></td></tr>
+            <tr><td>Tax (10.1%): <span id="tax">0.00</span></td></tr>
+            <tr><td>Total: <span id="total">0.00</span></td></tr>
+            <tr><td><button id="placeOrder" class="btn" type="button">Place Order</button></td></tr>
+          </table>
+      </div>
+    </div>
+    <script src="readMenu.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>
