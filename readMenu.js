@@ -24,7 +24,7 @@ var menuItems = {};
 // Read file to be interpreted.
 var fileText = "";
 var httpRequest= new XMLHttpRequest();
-httpRequest.open('GET', 'menu.csv');
+httpRequest.open('GET', 'menu.csv', false);
 httpRequest.onreadystatechange = function() {
   fileText = httpRequest.responseText;
 }
