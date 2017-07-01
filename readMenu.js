@@ -36,7 +36,7 @@ var propertyArr = ["filePath","name","price","desc","chinese"];
 var fileArr = fileText.split(',');
 var currentItem = {};
 for (var i = 0; i < fileArr.length; i++) {
-    currentItem[propertyArr[i % 5]] = fileArr[i];
+    currentItem[propertyArr[i % 5]] = fileArr[i].trim();
     if (i % 5 === 4) {
       menuItems[currentItem["filePath"]] = currentItem;
       currentItem = {};
